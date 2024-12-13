@@ -1,0 +1,746 @@
+/* BASIC STYL */
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url(../font/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+:root {
+    --main-color: #FAFDF2;
+
+    --h-f-green: #1A3129;
+    --Grey-60: #98989A;
+    --Grey-30: #4C4C4D;
+
+    --Green-70: #CBEA7B;
+    --Green-85: #E5F5BD;
+
+    --Green-95: #F6FBE9;
+
+    --Dark-Green-15: #1A3129;
+    --Dark-Green-20: #2C5446;
+    --Dark-Green-30: #356554;
+
+    --space-l-r: 0 5vw;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* WICHTIG. Bilder passen sie so automatisch dier breite an */
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    font-family: 'Urbanist';
+    background-color: var(--main-color);
+
+    margin-bottom: 300px;
+}
+
+.lightgray {
+    color: var(--Grey-60);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.btn-main {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--Green-70);
+    color: black;
+}
+
+.btn-main2 {
+    padding: 10px 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--Green-70);
+
+    background-color: var(--Green-95);
+}
+
+/*! HEADER */
+
+header {
+    margin-bottom: 50px;
+}
+
+.topBanner {
+    background-color: #1A3129;
+    padding: 20px 8%;
+    border: 1px solid var(--Dark-Green-15);
+}
+
+.topBanner-inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Dark-Green-20);
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+
+    img {
+        max-width: 20%;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div p {
+        margin: 0 20px 0 5px;
+    }
+
+    div img {
+        width: 5%;
+    }
+
+
+}
+
+header nav,
+footer nav {
+    background-color: var(--h-f-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-l-r);
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+footer .menu2 {
+    display: none;
+}
+
+
+nav a {
+    color: white;
+    padding: 2vw 1vw;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 40%;
+    max-width: 150px;
+}
+
+.toTop {
+    width: 30%;
+    max-width: 50px;
+    margin-left: 10px;
+}
+
+footer nav a {
+    padding: 5px;
+}
+
+.burg-menu div {
+    background-color: rgb(255, 255, 255);
+    height: 5px;
+    width: 30px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.burg-menu {
+    cursor: pointer;
+    display: none;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.hero img,
+.hero .content {
+    width: 50%;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--Green-70);
+    text-underline-offset: 10px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn-area {
+    margin-bottom: 20px;
+}
+
+.content img {
+    width: 80px;
+}
+
+/* ! Main */
+
+/* Features */
+.features {
+    padding: var(--space-l-r);
+    margin-bottom: 50px;
+}
+
+.f-hero {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.f-hero h2 {
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.container-wrp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vw;
+    margin-bottom: 15px;
+
+}
+
+.container-wrp-inner {
+
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+
+    border: 1px solid var(--Green-70);
+
+    background-color: var(--Green-95);
+
+    p {
+        color: var(--Grey-30);
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 20px;
+
+}
+
+
+
+.title img {
+    background-color: var(--Green-70);
+    padding: 8px;
+    border-radius: 5px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Blogs */
+
+.container-blog-inner {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    /* display: flex;
+    justify-content: center;
+    margin-bottom: 15px; */
+}
+
+.blog {
+    background-color: var(--Green-95);
+
+    border: 1px solid var(--Green-85);
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+    width: 100%;
+
+
+}
+
+.blog img,
+.blog h2 {
+    margin-bottom: 30px;
+}
+
+.blog p {
+    margin-bottom: 10px;
+}
+
+.blog_title {
+
+    gap: 1vw;
+
+    border: 1px solid var(--Green-70);
+    padding: 5px;
+
+    border-radius: 10px;
+
+    background-color: var(--Green-95);
+}
+
+.blog_title div {}
+
+.blog_title img {
+    margin: 0;
+    background-color: var(--Green-95);
+}
+
+.vec {
+    text-align: end;
+    background-color: var(--Green-95);
+}
+
+.vec img {
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    border: 1px solid var(--Green-85);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* TestIt_Form */
+
+.testItForm {
+    padding: var(--space-l-r);
+}
+
+.calculator-form {
+    background-color: var(--Green-95);
+    border: 1px solid var(--Green-85);
+
+    padding: 20px;
+    border-radius: 10px;
+
+    margin-bottom: 80px;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        div {
+            margin-bottom: 30px;
+
+            label {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+#activity {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form-group div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid var(--Green-85);
+    border-radius: 10px;
+    font-size: 16px;
+    height: 50px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.gender {
+
+    padding: 30px;
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    input {
+        appearance: none;
+
+        width: 15px;
+        height: 15px;
+        border: 1px solid var(--Grey-60);
+        border-radius: 50%;
+        outline: none;
+
+        background-color: white;
+    }
+
+    input:checked {
+        background-color: var(--Green-85);
+    }
+}
+
+.btn-calculate {
+    margin-top: 50px;
+    background-color: var(--Green-70);
+    color: black;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-calculate:hover {
+    background-color: #8cbf6b;
+}
+
+.monthBtns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .btnBorder {
+        border: 1px solid var(--Green-70);
+        border-radius: 5px;
+        padding: 20px 10px;
+        width: fit-content;
+        margin: 0 auto;
+
+        margin-bottom: 20px;
+    }
+
+    a {
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-weight: 500;
+    }
+
+    .month-btn {
+        background-color: var(--Dark-Green-30);
+        color: white;
+    }
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 50px;
+    border: 1px solid #EEF8D3;
+    background-color: var(--Green-95);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .price {
+        display: flex;
+    }
+
+    a {
+        background-color: var(--Green-70);
+        border-radius: 5px;
+    }
+
+    .cardBtn {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.metabolic-table {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #fafff5;
+    border: 1px solid var(--Green-70);
+
+    margin-bottom: 50px;
+}
+
+.metabolic-table>*:nth-child(-n+3) {
+    border-bottom: 1px solid var(--Green-70);
+    padding-bottom: 1rem;
+}
+
+.grid-item {
+    padding-top: 1rem;
+}
+
+.header {
+    font-weight: bold;
+    text-align: right;
+}
+
+.label {
+    font-weight: normal;
+}
+
+.value {
+    text-align: right;
+}
+
+
+/* Footer */
+footer nav {
+    color: white;
+}
+
+.keineAhnungWarum {
+    padding: 20px;
+    background-color: var(--Dark-Green-15);
+
+}
+
+.contact {
+    background-color: var(--Dark-Green-20);
+    border: 1px solid var(--Dark-Green-30);
+    border-radius: 5px;
+
+    margin-bottom: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.contact-inner {
+
+    gap: 5px;
+    padding: 10px;
+
+}
+
+
+
+
+.contact-inner a {
+    color: white;
+    padding: 10px;
+    background-color: var(--Dark-Green-20);
+
+    border: 1px solid var(--Dark-Green-30);
+    border-radius: 5px;
+
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: white;
+
+    text-align: center;
+    padding-bottom: 20px;
+
+
+
+
+}
+
+/* ! MediaQuery  */
+/* MediaQuery kommen immer ganz ans ende des CSS */
+
+/* In der Regel haben wir nur zwei Media Querys, eins fürs Tablet und eins für das Handy */
+
+/* * min-width vs max-width */
+/* -> Wenn wir "Mobil First" machen, sprich mit dem handy anfangen, benutzen wir "min-width"  */
+/* -> Wenn wir mit Desktop anfagnen, benutzen wir "max-width".  */
+
+/* Wir können uns auch ganz viele Media Querys sparen in dem wir bei seitliche werte relative werte benutzen wie vw vh oder %*/
+
+
+/* * Hier ein Link wo man breakpoints macht */
+/* https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp?utm_source=chatgpt.com */
+
+/* - screen: Für Bildschirme, z. B. Computer, Smartphones, Tablets. */
+/* - print: Für den Druck, z. B. beim Drucken einer Webseite. */
+/* - speech: Für Screenreader und andere Sprachausgabegeräte. */
+
+
+
+
+/* *Tablet */
+@media screen and (max-width: 920px) {
+
+
+    .menu {
+        display: none;
+    }
+
+    footer nav .menu2 {
+        display: block;
+    }
+
+    .burg-menu {
+        display: block;
+    }
+
+    .btn-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+
+        margin-bottom: 50px;
+    }
+
+
+    .hero img,
+    .hero .content {
+        width: 100%;
+
+
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content p {
+        color: var(--Grey-60);
+    }
+
+    .content img {
+        width: 80px;
+    }
+
+    .cards,
+    .container-blog-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+/* * Handy */
+@media screen and (max-width: 615px) {
+
+    .container-wrp {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .topBanner-inner {
+        padding: 10px;
+    }
+
+    .toHidden {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .happyCust {
+        position: absolute;
+        margin-top: -455px;
+        margin-left: 34vw;
+
+
+        img {
+            border: 1px solid var(--Dark-Green-30);
+            border-radius: 30px;
+
+            background: white;
+            margin-bottom: 10px;
+        }
+    }
+
+    .contact-inner {
+
+        display: inline-block !important;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .happyCust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: -660px;
+    }
+
+    .happyCust img {
+        position: relative;
+        margin-top: 100px;
+        left: -30px;
+
+    }
+
+
+}
